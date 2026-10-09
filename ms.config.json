@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/Managed-Apps/main/schemas/ms.config.schema.json",
+  "version": "0.0",
+  "appId": "62f55966-e16d-4061-bcc0-2d6f4efc2c23",
+  "appDisplayName": "Org Chart Explorer",
+  "environmentId": "e4ca4dba-198d-e22f-b555-6505fa798101",
+  "repoType": "native",
+  "cloud": "public",
+  "buildPath": "./dist",
+  "buildCommand": "npm run build",
+  "buildEntryPoint": "index.html",
+  "repositoryId": "9ef62277-218a-4c1c-9a0f-55e852a282d9",
+  "connectionReferences": {
+    "dc5000cd-bc22-40b4-9cc7-8e2291de4548": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "dataSets": {}
+    }
+  }
+}
